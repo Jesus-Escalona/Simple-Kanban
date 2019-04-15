@@ -27,14 +27,14 @@ class Card extends Component {
     };
 
     toggleIcons = () => {
-        this.setState(iconsVisible: true)
-    }
+        this.setState({iconsVisible: !this.state.iconsVisible})
+    };
     
     render() {
         const { text, cardIndex, columnIndex, moveCard, removeCard } = this.props;
         const { iconsVisible } = this.state;
         return (
-            <Wrapper onMouseEnter={this.showIcons}>
+            <Wrapper onMouseEnter={this.toggleIcons} onMouseLeave={this.toggleIcons}>
                 {iconsVisible && <Trash className="fas fa-trash" onClick={() => removeCard(columnIndex, cardIndex)}/>}
                 {columnIndex > 0 ? <i className="fas fa-chevron-left" onClick={() => moveCard(columnIndex, cardIndex, -1)}/> : <div/>}
                 <p>{text}</p>
