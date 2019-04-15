@@ -13,17 +13,35 @@ const Wrapper = styled.div`
   background-color: white;
 `
 
+const Trash = styled.i`
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 100px;
+  color: #E44157;
+`
+
 class Card extends Component {
+    
+    state = {
+        iconsVisible: false
+    };
+
+    toggleIcons = () => {
+        this.setState(iconsVisible: true)
+    }
+    
     render() {
-        const { text, cardIndex, columnIndex, moveCard } = this.props;
+        const { text, cardIndex, columnIndex, moveCard, removeCard } = this.props;
+        const { iconsVisible } = this.state;
         return (
-            <Wrapper>
+            <Wrapper onMouseEnter={this.showIcons}>
+                {iconsVisible && <Trash className="fas fa-trash" onClick={() => removeCard(columnIndex, cardIndex)}/>}
                 {columnIndex > 0 ? <i className="fas fa-chevron-left" onClick={() => moveCard(columnIndex, cardIndex, -1)}/> : <div/>}
                 <p>{text}</p>
                 {columnIndex < 3 ? <i className="fas fa-chevron-right" onClick={() => moveCard(columnIndex, cardIndex, 1)}/> : <div/>}
             </Wrapper>
         );
-    }
+    };
 }
 
 export default Card;

@@ -62,6 +62,18 @@ class App extends Component {
     this.setState({info: newInfo}, this.setData);
   };
 
+  removeCard = (columnIndex, cardIndex) => {
+    const { info } = this.state;
+
+    let newInfo = info.map((e,i) => {
+      if (i === columnIndex) {
+        e.list = e.list.filter((el,ix) => ix !== cardIndex)
+      }
+      return e
+    });
+    this.setState({info: newInfo}, this.setData);
+  };
+
   moveCard = (columnIndex, cardIndex, next) => {
     const {info} = this.state;
     let t = info[columnIndex].list[cardIndex];
@@ -87,7 +99,7 @@ class App extends Component {
   };
 
   render() {
-    let columnsArray = this.state.info.map((e,i) => <Column key={i} index={i} column={e} callback={this.addACard} moveCard={this.moveCard}/>);
+    let columnsArray = this.state.info.map((e,i) => <Column key={i} index={i} column={e} callback={this.addACard} moveCard={this.moveCard} removeCard={this.removeCard}/>);
     return (
         <Wrapper>
           {columnsArray}

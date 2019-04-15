@@ -17,8 +17,8 @@ class Column extends Component {
 
 
     render() {
-        const {index, column: {name, list, color}, callback, moveCard} = this.props;
-        const listWrapper = list.map((e,i) => <Card key={i} columnIndex={index} cardIndex={i} text={e} moveCard={moveCard}/>);
+        const {index, column: {name, list, color}, callback, moveCard, removeCard} = this.props;
+        const listWrapper = list.map((e,i) => <Card key={i} columnIndex={index} cardIndex={i} text={e} moveCard={moveCard} removeCard={removeCard}/>);
         return (
             <div>
                 <Header color={color}>
