@@ -94,12 +94,34 @@ class App extends Component {
     this.setState({info: newInfo}, this.setData);
   };
 
+  changeCard = (columnIndex, cardIndex) => {
+    const {info} = this.state;
+    let t = info[columnIndex].list[cardIndex];
+    let x = window.prompt('Edit this task', t);
+
+    let newInfo = info.map((e,i) => {
+      if (i === columnIndex) {
+        e.list = e.list.map((el,ix) => ix === cardIndex ? x : el)
+      }
+      return e
+    });
+    this.setState({info: newInfo}, this.setData);
+  };
+
   setData = () => {
     localStorage.setItem("state", JSON.stringify(this.state.info))
   };
 
   render() {
-    let columnsArray = this.state.info.map((e,i) => <Column key={i} index={i} column={e} callback={this.addACard} moveCard={this.moveCard} removeCard={this.removeCard}/>);
+    let columnsArray = this.state.info.map((e,i) => <Column
+        key={i}
+        index={i}
+        column={e}
+        callback={this.addACard}
+        moveCard={this.moveCard}
+        removeCard={this.removeCard}
+        changeCard={this.changeCard}
+    />);
     return (
         <Wrapper>
           {columnsArray}
