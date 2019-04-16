@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1203674b-6e22-41f2-a9a2-59ec93cc588a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/babel-plugin-macros.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Column.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Column.js" afterDir="false" />
     </list>
@@ -32,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/Column.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            <state relative-caret-position="441">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -44,20 +41,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Components/Card.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="32" />
+            <state relative-caret-position="312">
+              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,6 +70,7 @@
       <find>tailw</find>
       <find>babel-plugin</find>
       <find>default</find>
+      <find>font</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,8 +87,8 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/babel-plugin-macros.config.js" />
-        <option value="$PROJECT_DIR$/src/Components/Card.js" />
         <option value="$PROJECT_DIR$/src/Components/Column.js" />
+        <option value="$PROJECT_DIR$/src/Components/Card.js" />
       </list>
     </option>
   </component>
@@ -195,7 +187,8 @@
       <workItem from="1554835024756" duration="2875000" />
       <workItem from="1554910278672" duration="895000" />
       <workItem from="1555362511711" duration="4002000" />
-      <workItem from="1555429171185" duration="2915000" />
+      <workItem from="1555429171185" duration="3791000" />
+      <workItem from="1555439649376" duration="188000" />
     </task>
     <task id="LOCAL-00001" summary="Added editable properties using window.prompt">
       <created>1555367769311</created>
@@ -218,11 +211,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555430135279</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Tailwindcss and Tailwind.macro">
+      <created>1555437889265</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555437889265</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21160000" />
+    <option name="totallyTimeSpent" value="22224000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -237,11 +237,10 @@
     <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32994923" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32994923" />
@@ -252,9 +251,10 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32994923" />
       <window_info anchor="bottom" id="Flow" order="9" weight="0.32994923" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4996986" visible="true" weight="0.21725889" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4996986" visible="true" weight="0.21725889" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50030136" side_tool="true" weight="0.25482234" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32994923" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -307,7 +307,8 @@
     <MESSAGE value="Added editable properties using window.prompt" />
     <MESSAGE value="Fixed Bug that happened when user didn't fill input" />
     <MESSAGE value="Fixed delete trash icon positioning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed delete trash icon positioning" />
+    <MESSAGE value="Added Tailwindcss and Tailwind.macro" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Tailwindcss and Tailwind.macro" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
@@ -391,37 +392,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tailw">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tailw" />
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="2143" column="21" selection-start-line="2143" selection-start-column="5" selection-end-line="2143" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -449,27 +424,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tailwind.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="957" column="15" selection-start-line="957" selection-start-column="9" selection-end-line="957" selection-end-column="15" />
+        <state relative-caret-position="157">
+          <caret line="181" column="63" selection-start-line="181" selection-start-column="59" selection-end-line="181" selection-end-column="63" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Card.js">
+    <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="32" />
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Column.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        <state relative-caret-position="441">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Card.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

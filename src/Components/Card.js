@@ -3,7 +3,7 @@ import styled from "styled-components";
 import tw from 'tailwind.macro';
 
 const CardTextWrapper = styled.div`
-  ${tw`flex align-center justify-between`}
+  ${tw`flex justify-between`}
 `;
 
 const CardWrapper = styled.div`
@@ -13,7 +13,6 @@ const CardWrapper = styled.div`
   padding: 10px;
   height: auto;
   justify-content: center;
-  align-items: center;
   border-radius: 5px;
   background-color: white;
 `;

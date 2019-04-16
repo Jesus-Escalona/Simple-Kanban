@@ -4,7 +4,7 @@ import Card from "./Card";
 import tw from 'tailwind.macro';
 
 const Header = styled.div`
-  ${tw`flex justify-center rounded font-bold`};
+  ${tw`flex justify-center items-center rounded font-mono h-10 text-sm`};
   background-color: ${props => props.color}
 `;
 
