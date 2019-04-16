@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
 import styled from 'styled-components'
 import Card from "./Card";
+import tw from 'tailwind.macro';
 
 const Header = styled.div`
-  display: flex;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
+  ${tw`flex justify-center rounded font-bold`};
   background-color: ${props => props.color}
 `;
 

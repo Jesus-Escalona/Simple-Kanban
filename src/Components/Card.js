@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
 import styled from "styled-components";
-
+import tw from 'tailwind.macro';
 
 const CardTextWrapper = styled.div`
-  display: flex;
-  height: auto;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
+  ${tw`flex align-center justify-between`}
 `;
 
 const CardWrapper = styled.div`
