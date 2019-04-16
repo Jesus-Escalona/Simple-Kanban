@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   padding: 12.5px
   background-color: lightgray;
-`
+`;
 
 
 class App extends Component {
@@ -42,7 +42,7 @@ class App extends Component {
 
   componentDidMount() {
     let data = localStorage.getItem("state");
-    console.log(data)
+    console.log(data);
     if (data) {
       let k = JSON.parse(data);
       this.setState({info: k})
@@ -53,6 +53,7 @@ class App extends Component {
   addACard = (index) => {
     const {info} = this.state;
     let x = window.prompt();
+    if (x === "") return;
     let newInfo = info.map((e,i) => {
       if (i === index) {
         e.list= [...e.list, x]
